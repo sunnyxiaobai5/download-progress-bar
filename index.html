@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+
+<!--jQuery-->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/main.js"></script>
+<style type="text/css">
+
+#main{float:left;width:580px;padding:0 15px;height:465px;*display:inline;overflow:scroll;overflow-x:hidden}
+#main ul{float:left;width:540px;}
+#main ul li{float:left;width:540px;padding:15px 0;}
+#main ul .two{background:#f5f6f6;}
+#main ul .one{background:#fff;}
+#main ul li img{float:left;width:32px;height:32px;border:0;margin-right:10px;}
+#main ul li .info{float:left;width:270px;}
+#main ul li .info div{float:left;width:135px;}
+#main ul li .info .updatetime{height: 32px; line-height: 32px;}
+#main ul li h1{float:left;width:270px;height:16px;color:#555555;font-size:14px;line-height:16px;overflow:hidden;}
+#main ul li span{float:left;width:135px;;height:16px;color:#555555;font-size:12px;line-height:16px;overflow:hidden;}
+#main ul li .load{width:120px;margin-left:10px;float:left;height:32px;}
+#main ul li .loading{width:98px;float:left;height:8px;margin-top:10px;border:1px solid red;}
+#main ul li .cancel{width:10px;margin-left:10px;float:left;background:url(images/cancel.gif) no-repeat;height:10px;margin-top:10px;cursor:pointer;}
+#main ul li .btn{width:65px;float:right;cursor:pointer;padding-top:5px;height:26px;}
+#main ul li .downloadbtn{background:url(images/downloadbtn.gif) no-repeat;}
+#main ul li .installbtn{background:url(images/install.gif) no-repeat;}
+#main ul li .installingbtn{background:url(images/installing.gif) no-repeat;}
+#main ul li .downloadingbtn{line-height:27px;color:#525e5e;font-size:12px;}
+.bar{width:0px;height:8px;border:0px solid red;background:red;
+}
+</style>
+</head>
+
+<body>
+<div id="main">
+	<ul>
+    	<li class="one">
+        	<img src="logo/openal.png" width="32" height="32" />
+            <div class="info">
+                <div>
+                    <h1>游戏加加</h1>
+                    <span>大小：2.5</span>
+                </div>
+                <span class="updatetime">更新时间：2011-06-27</span>
+            </div>
+            <div class="btn downloadbtn" id="btn1" onclick="setLayout(1);"></div>
+ 
+            <div class="load" id="load1" style="display:none;">
+                <div class="loading" id="loading_1"><div class="bar" id="bar_1"></div></div>
+                <div class="cancel" id="cancel_1" onclick="pause(1);"></div>
+            </div>
+        </li>
+
+        <li class="two">
+            <img src="logo/openal.png" width="32" height="32" />
+            <div class="info">
+                <div class="info">
+                    <h1>游戏加加</h1>
+                    <span>大小：2.5</span>
+                </div>
+                <span class="updatetime">更新时间：2011-06-27</span>
+            </div>
+            <div class="btn downloadbtn" id="btn2" onclick="setLayout(2);"></div>
+
+            <div class="load" id="load2" style="display:none;">
+                <div class="loading" id="loading_2"><div class="bar" id="bar_2"></div></div>
+                <div class="cancel" id="cancel_2" onclick="pause(2);"></div>
+            </div>
+        </li>
+
+        <li class="one">
+            <img src="logo/openal.png" width="32" height="32" />
+            <div class="info">
+                <div>
+                    <h1>游戏加加</h1>
+                    <span>大小：2.5</span>
+                </div>
+                <span class="updatetime">更新时间：2011-06-27</span>
+            </div>
+            <div class="btn downloadbtn" id="btn3" onclick="setLayout(3);"></div>
+ 
+            <div class="load" id="load3" style="display:none;">
+                <div class="loading" id="loading_3"><div class="bar" id="bar_3"></div></div>
+                <div class="cancel" id="cancel_3" onclick="pause(3);"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
